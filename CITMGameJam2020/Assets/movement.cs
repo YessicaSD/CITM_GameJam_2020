@@ -22,8 +22,6 @@ public class movement : MonoBehaviour
         //get the Input from Vertical axis
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 velocity = new Vector3(0, 0, horizontalInput * speed * Time.deltaTime);
-        if (Input.GetKeyDown("space"))
-            Physics.gravity *= -1; 
        
         transform.position += velocity;
 
