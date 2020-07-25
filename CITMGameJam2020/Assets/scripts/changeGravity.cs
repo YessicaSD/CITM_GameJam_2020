@@ -10,7 +10,7 @@ public class changeGravity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && gravityMode)
+        if ((Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Space)) && gravityMode)
         {
             Physics.gravity *= -1;
             gravityMode = false;

@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -478,6 +479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1266832771351414972, guid: 992dfaa340e96e144a02f6bb4f4bb1fb,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ec4e4318d47876640b619b06a3b9abfa, type: 3}
     - target: {fileID: 3375208872548219190, guid: 992dfaa340e96e144a02f6bb4f4bb1fb,
         type: 3}
       propertyPath: m_Name
@@ -538,11 +544,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1266832771351414972, guid: 992dfaa340e96e144a02f6bb4f4bb1fb,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ec4e4318d47876640b619b06a3b9abfa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992dfaa340e96e144a02f6bb4f4bb1fb, type: 3}
 --- !u!1 &507029645
@@ -614,8 +615,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539961932}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.9339623, g: 0.57386786, b: 0.16300285, a: 1}
   m_Intensity: 1.7
   m_Range: 20.6
@@ -735,8 +737,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620232963}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.1986917, g: 0.8962264, b: 0.8962264, a: 1}
   m_Intensity: 2.11
   m_Range: 6.3
@@ -957,8 +960,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998960243}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1062,8 +1066,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057359341}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.1986917, g: 0.8962264, b: 0.8962264, a: 1}
   m_Intensity: 2.11
   m_Range: 13.66
@@ -1241,7 +1246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: -52.2}
+  m_AnchoredPosition: {x: -270, y: -14}
   m_SizeDelta: {x: 100, y: 104.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1094380072
@@ -1262,8 +1267,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: -3573936840820777196, guid: a8088dd15fd01b84e8a5a040fcb7bb9b,
     type: 3}
   m_Type: 0
@@ -1322,8 +1325,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115111711}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.9339623, g: 0.57386786, b: 0.16300285, a: 1}
   m_Intensity: 1.7
   m_Range: 20.6
@@ -1381,11 +1385,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4136058454616528269, guid: 4ec376a35b1fa364481dd7fd1f878c41,
-        type: 3}
-      propertyPath: m_Name
-      value: Button
-      objectReference: {fileID: 0}
     - target: {fileID: 4136058454616528265, guid: 4ec376a35b1fa364481dd7fd1f878c41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1441,6 +1440,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4136058454616528269, guid: 4ec376a35b1fa364481dd7fd1f878c41,
+        type: 3}
+      propertyPath: m_Name
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 4136058454616528374, guid: 4ec376a35b1fa364481dd7fd1f878c41,
         type: 3}
       propertyPath: camera
@@ -1487,8 +1491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 368, y: 233}
-  m_SizeDelta: {x: 588.2, y: 60.9}
+  m_AnchoredPosition: {x: 368, y: 183.4}
+  m_SizeDelta: {x: 588.2, y: 125.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1268410568
 MonoBehaviour:
@@ -1508,8 +1512,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ff3a015580ef046ac85fa087703e0a2d, type: 3}
     m_FontSize: 30
@@ -1522,8 +1524,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'You can travel between planes by pressing '
+    m_LineSpacing: 1.56
+  m_Text: "You can travel between planes by pressing \ni             or C"
 --- !u!222 &1268410569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1775,8 +1777,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: a6d5068a10e81b64890cbefbcc2e2483, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2024,8 +2024,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627650593}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0, g: 0.6698113, b: 0.62669516, a: 1}
   m_Intensity: 36.2
   m_Range: 4.21
@@ -2115,8 +2116,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645566200}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.9339623, g: 0.57386786, b: 0.16300285, a: 1}
   m_Intensity: 1.74
   m_Range: 19.09
@@ -2339,8 +2341,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727657945}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 1, g: 0.98223424, b: 0.6745098, a: 1}
   m_Intensity: 3.14
   m_Range: 13.66
@@ -2403,6 +2406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2637479847289558298, guid: 62830bda195ea224989561f47b1cd45d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 643201b46cac24c48953be9f0c3d28da, type: 2}
     - target: {fileID: 2637479847289558308, guid: 62830bda195ea224989561f47b1cd45d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2458,11 +2466,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2637479847289558298, guid: 62830bda195ea224989561f47b1cd45d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 643201b46cac24c48953be9f0c3d28da, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62830bda195ea224989561f47b1cd45d, type: 3}
 --- !u!1 &1857758771
@@ -2595,6 +2598,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1087401971, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
+      propertyPath: sceneName
+      value: menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2866416
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
+      propertyPath: m_Center.y
+      value: 0.1433208
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.045628548
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
+      propertyPath: m_Size.z
+      value: 3.431425
+      objectReference: {fileID: 0}
     - target: {fileID: 4249711212466090088, guid: 40c82f1fdb5265847bd631fb8ee9dd5d,
         type: 3}
       propertyPath: m_Name
@@ -2659,26 +2682,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087401971, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
-      propertyPath: sceneName
-      value: menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
-      propertyPath: m_Size.y
-      value: 1.2866416
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
-      propertyPath: m_Center.y
-      value: 0.1433208
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
-      propertyPath: m_Center.z
-      value: 0.045628548
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087401972, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
-      propertyPath: m_Size.z
-      value: 3.431425
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40c82f1fdb5265847bd631fb8ee9dd5d, type: 3}
@@ -2998,8 +3001,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078819290}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0, g: 0.6698113, b: 0.62669516, a: 1}
   m_Intensity: 36.2
   m_Range: 4.21
@@ -3089,8 +3093,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094892854}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 1, g: 0.98223424, b: 0.6745098, a: 1}
   m_Intensity: 2.11
   m_Range: 13.66
@@ -3166,8 +3171,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125006835}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.26900145, g: 0.8773585, b: 0.7977316, a: 1}
   m_Intensity: 3.5
   m_Range: 10

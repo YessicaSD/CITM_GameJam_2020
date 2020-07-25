@@ -40,7 +40,7 @@ public class cameraRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("R1") && !move && !player.perspectiveMode && !isChangingPerspective)
+        if ((Input.GetButtonDown("R1") || Input.GetKeyDown(KeyCode.UpArrow)) && !move && !player.perspectiveMode && !isChangingPerspective)
         {
             cam.orthographic  = true;
             if (actualCamera < cameraPos.Capacity - 1)
@@ -52,7 +52,7 @@ public class cameraRotate : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("L1") && !move && !player.perspectiveMode && !isChangingPerspective)
+        if ((Input.GetButtonDown("L1") || Input.GetKeyDown(KeyCode.DownArrow)) && !move && !player.perspectiveMode && !isChangingPerspective)
         {
             cam.orthographic = true;
             if (actualCamera >= 1)
